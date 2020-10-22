@@ -108,8 +108,15 @@ header{
 
 @media screen and (max-width: 767px){
   .content_main{
-    width: 90%;
+    width: 95%;
   }
+  .content_form{
+    margin: 10px 5px;
+  }
+  .list_gasto{
+    justify-content: space-between;
+  }
+
 }
 
 @media screen and (max-width: 457px){
