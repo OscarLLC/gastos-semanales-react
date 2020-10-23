@@ -27,7 +27,6 @@ class Form extends Component{
                                       
     }
 
-
     render(){
         return(
             <div className="content_form">

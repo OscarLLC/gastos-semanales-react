@@ -42,17 +42,23 @@ header{
 }
 
 .content_list{
-  margin: 10px 15px;
+  margin: 10px 15px 15px 0;
   
 }
 
 
 .campos_input{
   height: 30px;
-  border-style: solid;
+  border-style: hidden;
   margin: 8px 0;
   width: 96%;
   border-radius: 5px;
+  padding: 0 0 0 8px;
+  border: 1px solid #c2c2c2;
+}
+
+.label{
+  font-size: 14px;
 }
 
 .button{
@@ -78,7 +84,7 @@ header{
 .list_gasto{
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
@@ -96,6 +102,37 @@ header{
 .list_gasto .monto_gasto {
   color: white;
   text-align: center;
+}
+
+.content_presupuesto{
+  display: flex;
+  align-items: center;
+  background-color: rgb(7, 168, 243);
+  border-radius: 5px;
+  width: 92%;
+  height: 40px;
+  padding: 0 0 0 10px;
+  margin-bottom: 15px;
+}
+
+.text_presupuesto{
+  color: #050947;
+  font-size: 14px;
+}
+
+.content_restante{
+  display: flex;
+  align-items: center;
+  background-color: rgb(153, 223, 190);
+  border-radius: 5px;
+  width: 92%;
+  height: 40px;
+  padding: 0 0 0 10px;
+}
+
+.text_restante{
+  color: #03290b;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1020px){
@@ -120,5 +157,14 @@ header{
 }
 
 @media screen and (max-width: 457px){
+  .text_title{
+    margin-left: -4px;
+  }
+  .campos_input{
+    width: 80%;
+  }
+  .button{
+    width: 85%;
+  }
  
 }
