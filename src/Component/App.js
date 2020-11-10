@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import '../css/App.css';
-import Header from './Header'
-import Form from './Form'
-import Listado from './Listado'
-import {validarPresupuesto} from '../helper'
+import Header from './Header';
+import Form from './Form';
+import Listado from './Listado';
+import {validarPresupuesto} from '../helper';
 import ControlPresupuesto from './ControlPresupuesto';
 
 
@@ -53,7 +53,6 @@ class App extends Component{
     const gastos = {...this.state.gastos}
 
     //agregar gasto al object
-
     gastos[`gastos${Date.now()}`] = gasto;
     this.restaPresupuesto(gasto.montoGasto)
 

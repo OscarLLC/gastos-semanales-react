@@ -10,11 +10,11 @@ export const validarPresupuesto = presupuesto => {
 export const revisarPresupuesto = (presupuesto, restante) => {
     let clase;
     if((presupuesto / 4) > restante){
-        clase = "alert -danger"
+        clase = "alert alert_danger"
     }else if((presupuesto / 2) > restante){
-        clase = "alert-warning"
+        clase = "alert alert_warning"
     }else {
-        clase = "alert-succes"
+        clase = "alert alert_succes"
     }return clase; 
     
 }

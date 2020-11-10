@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 
 
+
 class Form extends Component{
     nombreGasto = React.createRef();
     montoGasto = React.createRef();
@@ -34,11 +35,11 @@ class Form extends Component{
                     <p className="text_title">{this.props.titulo}</p>
                     <div className="campos">
                         <label className="label">Nombre Gasto</label><br />
-                        <input ref={this.nombreGasto} className="campos_input" type="text" placeholder="eje: Comida" />
+                        <input required ref={this.nombreGasto} className="campos_input" type="text" placeholder="eje: Comida" />
                     </div>
                     <div className="campos">
                         <label className="label">Cantidad</label><br />
-                        <input ref={this.montoGasto} className="campos_input" type="text" placeholder="eje: $500" />
+                        <input required ref={this.montoGasto} className="campos_input" type="text" placeholder="eje: $500" />
                     </div>
                     <div className="campo_button">
                         <input className="button" type="submit" value="Agregar" />
